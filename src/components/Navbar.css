@@ -1,0 +1,49 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 20px;
+  }
+  
+  .navbar-logo {
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-links {
+    list-style-type: none;
+  }
+  
+  .navbar-links li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .navbar-links li a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  /* Light mode */
+  .App .navbar-logo,
+  .App .navbar-links li a {
+    color: var(--text-color-light);
+  }
+  
+  .App .navbar-links li a:hover,
+  .App .navbar-logo:hover {
+    color: #04369a; /* Black text on hover in light mode */
+  }
+  
+  /* Dark mode */
+  .App.dark-mode .navbar-logo,
+  .App.dark-mode .navbar-links li a {
+    color: #fff; /* White text in dark mode */
+  }
+  
+  .App.dark-mode .navbar-links li a:hover,
+  .App.dark-mode .navbar-logo:hover {
+    color: #6d6d6d; /* Light grey text on hover in dark mode */
+  }
+  

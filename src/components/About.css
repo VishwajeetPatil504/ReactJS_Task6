@@ -1,0 +1,25 @@
+.about {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.5em;
+}
+
+.about p {
+  font-size: 1.2em;
+}
+
+/* Light mode */
+.App .about h2,
+.App .about p {
+  color: #000; /* Black text in light mode */
+}
+
+/* Dark mode */
+.App.dark-mode .about h2,
+.App.dark-mode .about p {
+  color: #fff; /* White text in dark mode */
+}

@@ -1,0 +1,17 @@
+.projects {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .projects h2 {
+    font-size: 2em;
+  }
+  
+  .projects h3 {
+    font-size: 1.5em;
+  }
+  
+  .projects p {
+    font-size: 1.2em;
+  }
+  

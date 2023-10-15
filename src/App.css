@@ -1,38 +1,53 @@
+:root {
+  --text-color-light: #333;
+  --text-color-dark: #ddd;
+  --bg-color-light: #f4f4f4;
+  --bg-color-dark: #333;
+}
+
 .App {
   text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color-light);
+  color: var(--text-color-light);
+  padding: 50px;
+  background-image: url('C:\Users\Vishu\Desktop\MERN\React JS\reacttask6\src\light mode.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh; /* This will make the div take the full height of the viewport */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dark-mode {
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-dark);
+  /* Replace '/dark-mode-background.jpg' with the actual path to your dark mode background image */
+  background-image: url('C:\Users\Vishu\Desktop\MERN\React JS\reacttask6\src\dark mode.jpg');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+  margin: 20px auto;
+  border-bottom: 2px solid currentColor;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-.App-link {
-  color: #61dafb;
+nav ul li {
+  display: inline;
+  margin-right: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav ul li a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+h2 {
+  color: #333;
+}
+
+p {
+  color: #666;
 }

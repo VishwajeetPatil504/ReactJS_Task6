@@ -1,0 +1,42 @@
+.contact {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: transparent; /* Transparent background */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+}
+
+.contact h2 {
+  font-size: 2.5em;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding for better appearance */
+  margin-bottom: 10px; /* Space between fields */
+  border-radius: 5px; /* Slightly rounded corners */
+}
+
+.contact form button {
+  padding: 10px 20px; /* Padding for better appearance */
+  border-radius: 5px; /* Slightly rounded corners */
+  background-color: #007BFF; /* Blue background */
+}
+
+/* Light mode */
+.App .contact,
+.App .contact form input,
+.App .contact form textarea,
+.App .contact form button {
+  color: #000; /* Black text in light mode */
+}
+
+/* Dark mode */
+.App.dark-mode .contact,
+.App.dark-mode .contact form input,
+.App.dark-mode .contact form textarea,
+.App.dark-mode .contact form button {
+  color: #fff; /* White text in dark mode */
+}
